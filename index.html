@@ -1,63 +1,592 @@
-<section id="company-overview">
-  <h1>Company Overview</h1>
-  <p>
-    We help organizations protect their people and protect their bottom line—without turning the job into a paperwork contest.
-  </p>
-  <p>
-    Northline Safety Solutions provides risk management, safety, health, and emergency response consulting for construction,
-    industrial, and operational environments. We live in the real world: tight schedules, changing conditions,
-    high-energy hazards, and crews that need clear direction more than another binder.
-  </p>
-  <p>
-    Our work is delivered on a scoped, contract basis and built to travel—focused on protecting people, reducing risk,
-    and keeping the job moving. If you’re trying to keep your recordables down or make sure your response capability
-    actually works when something goes sideways, this is exactly what we do.
-  </p>
-</section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<section id="core-competencies">
-  <h2>Core Competencies</h2>
+  <title>Northline Safety Solutions | Construction Safety, OSHA Support, Standby Rescue, Technical Rescue Training</title>
+  <meta name="description" content="Northline Safety Solutions provides construction & industrial safety consulting, mock OSHA audits, regulatory support, incident investigations, standby rescue, and technical rescue training. Built to travel." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://YOURDOMAIN.com/" />
 
-  <h3>Construction &amp; Industrial Support</h3>
-  <p><strong>Strengthening safety performance on the floor and in the field.</strong></p>
-  <ul>
-    <li><strong>Jobsite &amp; Plant Leadership:</strong> Presence that raises the standard with minimal impact on production.</li>
-    <li><strong>High-Risk Work Planning:</strong> Energized work, LOTO, confined space, lifting/rigging, and SIMOPS.</li>
-    <li><strong>Program Builds &amp; Tune-Ups:</strong> Internal safety and compliance consulting services.</li>
-    <li><strong>Incident Investigations:</strong> Root-cause analysis that produces solutions crews can actually execute.</li>
-    <li><strong>Mock OSHA Audits:</strong> Pressure-testing documentation and field behavior before an inspector does.</li>
-    <li><strong>Regulatory Support:</strong> Organizing facts, coaching leadership, and tightening document flow to reduce unforced errors during inspections.</li>
-    <li><strong>Training That Lands:</strong> Custom-built for supervisors and crews—no death-by-PowerPoint.</li>
-    <li><strong>Standby Rescue:</strong> Real capability and accountability for confined space, work at height, and shutdowns.</li>
-  </ul>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Northline Safety Solutions" />
+  <meta property="og:description" content="Protect your people. Protect your bottom line. Safety, OSHA support, standby rescue, and technical rescue training—built to travel." />
+  <meta property="og:url" content="https://YOURDOMAIN.com/" />
+  <meta property="og:image" content="https://YOURDOMAIN.com/assets/northline-og.png" />
 
-  <h3>Emergency Services &amp; Response Readiness</h3>
-  <p><strong>Operational support for Fire Departments, Rescue Teams, and High-Risk Sites.</strong></p>
-  <ul>
-    <li><strong>Technical Rescue Training:</strong> Practitioner-focused strategy for confined space, low-angle, and high-angle rescue—customized to actual experience levels.</li>
-    <li><strong>Pre-Incident Planning:</strong> Playbooks built around the staffing and equipment you actually have at 2:00 a.m.</li>
-    <li><strong>Apparatus &amp; Equipment:</strong> Inspection, testing, and training to keep critical assets reliable.</li>
-    <li><strong>Operational Risk Reduction:</strong> Helping chiefs justify training and staffing priorities with defensible reasoning.</li>
-  </ul>
-</section>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Northline Safety Solutions" />
+  <meta name="twitter:description" content="Safety consulting, mock OSHA audits, regulatory support, standby rescue, and technical rescue training—built to travel." />
+  <meta name="twitter:image" content="https://YOURDOMAIN.com/assets/northline-og.png" />
 
-<section id="past-performance">
-  <h2>Past Performance &amp; Differentiators</h2>
-  <p>
-    Better planning and cleaner execution reduce the things that hurt people—and the far-reaching consequences that follow.
-  </p>
-  <p>
-    Northline is built for travel. We make risk visible, plans executable, and performance repeatable.
-  </p>
-  <ul>
-    <li><strong>Real-World Focus:</strong> No wasted time on theory—only what works under stress.</li>
-    <li><strong>Customized Training:</strong> We assess current expertise so time isn’t wasted relearning what crews already know.</li>
-    <li><strong>Defensible Strategy:</strong> Clear reasoning, clean documentation, and a solid “why” behind every recommendation.</li>
-  </ul>
-  <p>
-    <em>
-      “If you’re thinking, ‘This would help my people and keep us out of trouble,’ you’re exactly right.”
-    </em>
-  </p>
-</section>
+  <!-- Brand styling (based on your logo) -->
+  <style>
+    :root{
+      --bg: #0b0f0d;           /* deep near-black */
+      --card: rgba(255,255,255,0.06);
+      --card2: rgba(255,255,255,0.08);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --border: rgba(255,255,255,0.12);
 
+      /* Northline palette (green + beige + gold accent) */
+      --northline-green: #0f3a2a;
+      --northline-green-2: #15533b;
+      --northline-beige: #efe6cf;
+      --northline-gold: #b79b3a;
+
+      --shadow: 0 20px 50px rgba(0,0,0,0.45);
+      --radius: 18px;
+      --radius2: 22px;
+      --max: 1100px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(900px 450px at 20% 5%, rgba(21,83,59,0.35), transparent 60%),
+        radial-gradient(900px 450px at 85% 20%, rgba(183,155,58,0.18), transparent 55%),
+        linear-gradient(180deg, #070a08 0%, #0b0f0d 55%, #070a08 100%);
+      line-height: 1.55;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:focus{ outline: 2px solid rgba(239,230,207,0.6); outline-offset: 3px; border-radius: 10px; }
+
+    .wrap{
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 3.25rem 0 4rem;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 1rem;
+      padding: 0.75rem 0 1.5rem;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: .9rem;
+      min-width: 0;
+    }
+    .brand img{
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 18px rgba(0,0,0,.5));
+    }
+    .brand .name{
+      display:flex;
+      flex-direction:column;
+      line-height:1.1;
+      min-width: 0;
+    }
+    .brand .name strong{
+      font-size: 1rem;
+      letter-spacing: .02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .brand .name span{
+      font-size: .85rem;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav{
+      display:flex;
+      gap:.65rem;
+      align-items:center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .pill{
+      padding: .55rem .8rem;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      border-radius: 999px;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+    .pill:hover{ background: rgba(255,255,255,0.06); color: var(--text); }
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 1.25rem;
+      align-items: stretch;
+      margin-top: .75rem;
+    }
+
+    .panel{
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-main{ padding: 1.4rem 1.4rem 1.25rem; }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:.55rem;
+      padding:.35rem .7rem;
+      border-radius: 999px;
+      border:1px solid rgba(239,230,207,0.26);
+      background: rgba(239,230,207,0.06);
+      color: rgba(239,230,207,0.92);
+      font-size: .88rem;
+      letter-spacing: .01em;
+      margin-bottom: .9rem;
+      width: fit-content;
+    }
+    .dot{
+      width: 10px; height: 10px; border-radius: 999px;
+      background: radial-gradient(circle at 35% 35%, var(--northline-beige), var(--northline-gold));
+      box-shadow: 0 0 0 4px rgba(183,155,58,0.12);
+    }
+
+    h1{
+      margin:0 0 .65rem;
+      font-size: clamp(1.5rem, 2.2vw + 1rem, 2.35rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .lead{
+      margin:0 0 1.1rem;
+      color: var(--muted);
+      font-size: 1.03rem;
+      max-width: 60ch;
+    }
+
+    .cta{
+      display:flex;
+      gap:.75rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.55rem;
+      padding: .9rem 1.05rem;
+      border-radius: 14px;
+      border: 1px solid rgba(239,230,207,0.28);
+      background: rgba(239,230,207,0.06);
+      color: rgba(239,230,207,0.92);
+      font-weight: 650;
+      letter-spacing: .01em;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      min-width: 180px;
+    }
+    .btn:hover{
+      background: rgba(239,230,207,0.1);
+      transform: translateY(-1px);
+      border-color: rgba(239,230,207,0.42);
+    }
+
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(21,83,59,0.95), rgba(15,58,42,0.9));
+      border-color: rgba(183,155,58,0.36);
+      color: rgba(239,230,207,0.96);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.4);
+    }
+    .btn.primary:hover{
+      border-color: rgba(183,155,58,0.6);
+      background: linear-gradient(180deg, rgba(21,83,59,1), rgba(15,58,42,0.95));
+    }
+
+    .hero-side{
+      display:flex;
+      flex-direction: column;
+    }
+    .hero-side .media{
+      position: relative;
+      height: 100%;
+      min-height: 320px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 1.2rem;
+      background:
+        radial-gradient(600px 280px at 55% 30%, rgba(239,230,207,0.16), transparent 60%),
+        radial-gradient(600px 280px at 40% 80%, rgba(21,83,59,0.35), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    }
+    .hero-side .media img{
+      width: min(92%, 360px);
+      height: auto;
+      filter: drop-shadow(0 24px 34px rgba(0,0,0,0.55));
+    }
+    .media-note{
+      position:absolute;
+      bottom: .95rem;
+      left: .95rem;
+      right: .95rem;
+      font-size: .88rem;
+      color: rgba(255,255,255,0.72);
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.20);
+      padding: .75rem .85rem;
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.1rem;
+      margin-top: 1.25rem;
+    }
+    .card{
+      grid-column: span 6;
+      padding: 1.15rem 1.15rem 1.05rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+    }
+    .card h2{
+      margin: 0 0 .55rem;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+    }
+    .card p{
+      margin: 0 0 .75rem;
+      color: var(--muted);
+    }
+    ul{
+      margin: 0;
+      padding-left: 1.05rem;
+      color: rgba(255,255,255,0.82);
+    }
+    li{ margin: .45rem 0; }
+    li strong{ color: rgba(239,230,207,0.94); font-weight: 700; }
+
+    .full{
+      grid-column: 1 / -1;
+      padding: 1.15rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+    }
+    .quote{
+      margin: 0;
+      font-style: italic;
+      color: rgba(239,230,207,0.92);
+      border-left: 3px solid rgba(183,155,58,0.6);
+      padding-left: .9rem;
+    }
+
+    footer{
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.10);
+      display:flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.65);
+      font-size: .92rem;
+    }
+
+    /* Mobile-first tightening */
+    @media (max-width: 900px){
+      .hero{ grid-template-columns: 1fr; }
+      .hero-side .media{ min-height: 280px; }
+      .card{ grid-column: 1 / -1; }
+      header{ align-items: flex-start; flex-direction: column; }
+      .nav{ justify-content: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .btn{ transition: none; }
+      .btn:hover{ transform:none; }
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data (replace YOURDOMAIN + details you want indexed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://YOURDOMAIN.com/#org",
+        "name": "Northline Safety Solutions",
+        "url": "https://YOURDOMAIN.com/",
+        "logo": "https://YOURDOMAIN.com/assets/northline-logo.png",
+        "image": "https://YOURDOMAIN.com/assets/northline-og.png",
+        "slogan": "Protect your people. Protect your bottom line.",
+        "description": "Risk management, safety, health, and emergency response consulting for construction, industrial, and operational environments. Mock OSHA audits, regulatory support, incident investigations, standby rescue, and technical rescue training. Built to travel.",
+        "areaServed": ["United States", "Guam", "Japan"],
+        "knowsAbout": [
+          "Construction safety",
+          "Industrial safety",
+          "OSHA compliance",
+          "Mock OSHA audits",
+          "OSHA inspection readiness",
+          "Incident investigations",
+          "Lockout/tagout (LOTO)",
+          "Confined space",
+          "Fall protection",
+          "Standby rescue",
+          "Technical rescue training",
+          "High angle rescue",
+          "Low angle rescue",
+          "Rope access safety",
+          "Emergency response planning"
+        ],
+        "sameAs": []
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://YOURDOMAIN.com/#business",
+        "name": "Northline Safety Solutions",
+        "url": "https://YOURDOMAIN.com/",
+        "telephone": "+1-XXX-XXX-XXXX",
+        "email": "hello@YOURDOMAIN.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chicago",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        },
+        "serviceArea": {
+          "@type": "AdministrativeArea",
+          "name": "Nationwide / Travel"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Northline Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Construction & Industrial Safety Consulting",
+                "serviceType": "Risk management and safety consulting",
+                "areaServed": "US"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Mock OSHA Audits & Inspection Readiness",
+                "serviceType": "Audit and OSHA readiness",
+                "areaServed": "US"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Regulatory Support During OSHA Inspections",
+                "serviceType": "Inspection support (non-legal)",
+                "areaServed": "US"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Incident Investigations & Root Cause Analysis",
+                "serviceType": "Incident investigation",
+                "areaServed": "US"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Standby Rescue",
+                "serviceType": "Emergency response support",
+                "areaServed": "US"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Technical Rescue Training (Confined Space, Low/High Angle)",
+                "serviceType": "Training",
+                "areaServed": "US"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://YOURDOMAIN.com/#website",
+        "url": "https://YOURDOMAIN.com/",
+        "name": "Northline Safety Solutions",
+        "publisher": { "@id": "https://YOURDOMAIN.com/#org" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://YOURDOMAIN.com/#home",
+        "url": "https://YOURDOMAIN.com/",
+        "name": "Northline Safety Solutions | Safety, OSHA Support, Standby Rescue",
+        "isPartOf": { "@id": "https://YOURDOMAIN.com/#website" },
+        "about": { "@id": "https://YOURDOMAIN.com/#business" },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand" itemscope itemtype="https://schema.org/Organization">
+        <!-- Replace with your transparent logo file path -->
+        <img src="assets/northline-logo.png" alt="Northline Safety Solutions logo" itemprop="logo" />
+        <div class="name">
+          <strong itemprop="name">Northline Safety Solutions</strong>
+          <span>Safety • OSHA Support • Standby Rescue • Technical Rescue Training</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="pill" href="#company-overview">Overview</a>
+        <a class="pill" href="#core-competencies">Core Competencies</a>
+        <a class="pill" href="#past-performance">Differentiators</a>
+      </nav>
+    </header>
+
+    <main id="main-content" itemscope itemtype="https://schema.org/WebPage">
+      <section class="hero">
+        <div class="panel hero-main">
+          <div class="kicker"><span class="dot" aria-hidden="true"></span>Built for high-consequence environments</div>
+          <h1>Protect your people. Protect your bottom line.</h1>
+          <p class="lead">
+            Northline Safety Solutions provides risk management, safety, health, and emergency response consulting for construction,
+            industrial, and operational environments. We live in the real world: tight schedules, changing conditions, high-energy hazards,
+            and crews that need clear direction more than another binder.
+          </p>
+          <p class="lead" style="margin-top:-.25rem;">
+            Delivered on a scoped, contract basis and built to travel—focused on protecting people, reducing risk, and keeping the job moving.
+            If you’re trying to keep your recordables down or make sure your response capability actually works when something goes sideways,
+            this is exactly what we do.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSe9qe8kAqFIArG7ioAkkibTgnb6o0cEG7Glsw9jKXR1BCiE9g/viewform?usp=sharing&ouid=114412811808236077708"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Request a custom quote (opens form)">
+              Request a Custom Quote
+            </a>
+
+            <a class="btn"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSfRoqhFbcyv3s7V-yNd_TX9gSgIyvp3pcqMLEH3Ag2YEgcJJg/viewform?usp=sharing&ouid=114412811808236077708"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Careers with Northline (opens form)">
+              Careers with Northline
+            </a>
+          </div>
+        </div>
+
+        <aside class="panel hero-side" aria-label="Brand">
+          <div class="media">
+            <!-- Replace with your transparent-background logo PNG -->
+            <img src="assets/northline-logo.png" alt="Northline Maltese cross emblem" />
+            <div class="media-note">
+              Chicago-based. Built to travel. If the risk is high, the right expertise is worth mobilizing.
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="company-overview" class="grid" aria-label="Company overview">
+        <div class="full">
+          <h2>Company Overview</h2>
+          <p style="color:var(--muted); margin:0;">
+            We help organizations protect their people and protect their bottom line, without turning the job into a paperwork contest.
+          </p>
+        </div>
+      </section>
+
+      <section id="core-competencies" class="grid" aria-label="Core competencies">
+        <div class="card" itemscope itemtype="https://schema.org/Service">
+          <h2 itemprop="name">Construction &amp; Industrial Support</h2>
+          <p><strong>Strengthening safety performance on the floor and in the field.</strong></p>
+          <ul itemprop="description">
+            <li><strong>Jobsite &amp; Plant Leadership:</strong> Presence that raises the standard with minimal slowing of production.</li>
+            <li><strong>High-Risk Work Planning:</strong> Energized work, LOTO, confined space, lifting/rigging, and SIMOPS.</li>
+            <li><strong>Program Builds &amp; Tune-Ups:</strong> Internal consulting services.</li>
+            <li><strong>Incident Investigations:</strong> Root-cause analysis that produces solutions crews can actually execute.</li>
+            <li><strong>Mock OSHA Audits:</strong> Pressure-testing your documentation and field behavior before an inspector does.</li>
+            <li><strong>Regulatory Support:</strong> Organizing facts, coaching leadership, and tightening document flow to reduce unforced errors during inspections.</li>
+            <li><strong>Training That Lands:</strong> Custom-built for supervisors and crews based on current level (no death-by-PowerPoint).</li>
+            <li><strong>Standby Rescue:</strong> Real capability and accountability for confined space, work at height, and shutdowns.</li>
+          </ul>
+        </div>
+
+        <div class="card" itemscope itemtype="https://schema.org/Service">
+          <h2 itemprop="name">Emergency Services &amp; Response Readiness</h2>
+          <p><strong>Operational support for Fire Departments, Rescue Teams, and High-Risk Sites.</strong></p>
+          <ul itemprop="description">
+            <li><strong>Technical Rescue Training:</strong> Practitioner-focused strategy for confined space, low angle, and high angle rescue—custom-built to experience level (no death-by-PowerPoint).</li>
+            <li><strong>Pre-Incident Planning:</strong> Playbooks that fit the staffing and equipment you actually have at 2:00 a.m.</li>
+            <li><strong>Apparatus &amp; Equipment:</strong> Inspection, testing, and training to keep critical assets reliable.</li>
+            <li><strong>Operational Risk Reduction:</strong> Helping chiefs justify training and staffing priorities with defensible reasoning.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="past-performance" class="grid" aria-label="Past performance and differentiators">
+        <div class="full">
+          <h2>Past Performance &amp; Differentiators</h2>
+          <p style="color:var(--muted); margin-top:.25rem;">
+            Better planning and cleaner execution reduce the things that hurt people and have far-reaching consequences beyond the potential for loss of life.
+            Northline is built for travel. We make risk visible, plans executable, and performance repeatable.
+          </p>
+          <ul style="margin-top:.7rem;">
+            <li><strong>Real World Focus:</strong> We don’t waste time on theory; we focus on what works under stress.</li>
+            <li><strong>Customized Training:</strong> We assess current expertise so minimal time is wasted learning what you already know.</li>
+            <li><strong>Defensible Strategy:</strong> We provide the “why” and the documentation to back it up.</li>
+          </ul>
+          <p class="quote" style="margin-top:.9rem;">
+            “If you’re thinking, ‘This would help my people and keep us out of trouble,’ you’re exactly right.”
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong style="color:rgba(239,230,207,0.9);">Northline Safety Solutions</strong><br />
+        Chicago-based • Built to travel
+      </div>
+      <div style="text-align:right;">
+        <a class="pill" href="https://docs.google.com/forms/d/e/1FAIpQLSe9qe8kAqFIArG7ioAkkibTgnb6o0cEG7Glsw9jKXR1BCiE9g/viewform?usp=sharing&ouid=114412811808236077708" target="_blank" rel="noopener noreferrer">
+          Request a Custom Quote
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
